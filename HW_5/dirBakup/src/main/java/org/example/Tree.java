@@ -38,7 +38,6 @@ public class Tree {
         for (File f: files) {            
             subDirCounter++;             
             print(f, indent, subDirCounter == subDirTotal);
-
         }
     }
 }
