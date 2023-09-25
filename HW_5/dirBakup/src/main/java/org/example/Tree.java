@@ -31,23 +31,14 @@ public class Tree {
             return;
 
         int subDirTotal = 0;
-        for (int i = 0; i < files.length; i++) {
-            if (files[i].isDirectory())
-                subDirTotal++;
-            if (files[i].isFile())
-                print(files[i], indent, true); // доделать!!!
-
+        for (File f: files) {            
+            subDirTotal++;
         }
-
         int subDirCounter = 0;
-        for (int i = 0; i < files.length; i++) {
-            if (files[i].isDirectory()) {
-                subDirCounter++;
-                if (files[i].isFile())
-                    print(files[i], indent, false);
-                print(files[i], indent, subDirCounter == subDirTotal);
+        for (File f: files) {            
+            subDirCounter++;             
+            print(f, indent, subDirCounter == subDirTotal);
 
-            }
         }
     }
 }
