@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Tree",
+            "request": "launch",
+            "mainClass": "org.example.Tree",
+            "projectName": "dirBakup"
+        },
+        {
+            "type": "java",
             "name": "Main",
             "request": "launch",
             "mainClass": "org.example.Main",
